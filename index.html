@@ -128,6 +128,7 @@ h2 span{color:var(--gold)}
 .badge{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:rgba(18,92,165,.35);border:1px solid var(--blue);white-space:nowrap}
 .item.break{background:rgba(232,168,23,.09);border-style:dashed;border-color:rgba(232,168,23,.5)}
 .item.break h3{color:var(--gold);text-transform:uppercase;letter-spacing:.08em;font-size:.9rem}
+.item.magistral h3{color:var(--gold);font-weight:700}
 .item.tbc h3{color:var(--blue-300);font-style:italic;font-weight:500}
 .block-title{display:flex;align-items:baseline;gap:14px;margin:6px 0 4px;font-family:var(--display);font-size:1.6rem;text-transform:uppercase;font-weight:700}
 .block-title small{font-family:var(--body);font-size:.85rem;color:var(--muted);font-weight:500;text-transform:none}
@@ -478,11 +479,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
     ["11:20 – 11:40 AM","Atención inicial del paciente quemado: desafíos terapéuticos de las primeras 24 horas","Dra. Yraida Peña"],
     ["11:45 – 12:05 PM","Laparoscopia en el escenario de urgencia: indicaciones y límites","Dr. Eduardo Nunes"],
     ["12:05 – 1:20 PM","Receso · Almuerzo",null,"break"]]},
-   {b:4,t:"Bloque 4",s:"Piso pélvico, urología y trauma",items:[
-    ["1:30 – 1:50 PM","Geometría quirúrgica del piso pélvico: restauración funcional vs recurrencia","Dra. Judibeth Medina"],
-    ["1:50 – 2:15 PM","Urología dirigida al médico rural","Dr. José Carvajal"],
-    ["2:15 – 2:50 PM","Trauma toracoabdominal penetrante vs cerrado: prioridades de tratamiento y oportunidad quirúrgica","Dr. Juan Guzman"],
-    ["2:50 – 3:10 PM","Conversatorio: podcast de cirujanos de la San José","Dres. Díaz, Sotillo, Vásquez y Guzman"]]}
+   {b:4,t:"Bloque 4",s:"Conferencia magistral, piso pélvico, urología y trauma",items:[
+    ["1:30 – 1:55 PM","Conferencia Magistral","Dr. Francisco Zamora","magistral","Virtual"],
+    ["1:55 – 2:15 PM","Geometría quirúrgica del piso pélvico: restauración funcional vs recurrencia","Dra. Judibeth Medina"],
+    ["2:15 – 2:40 PM","Urología dirigida al médico rural","Dr. José Carvajal"],
+    ["2:40 – 3:15 PM","Trauma toracoabdominal penetrante vs cerrado: prioridades de tratamiento y oportunidad quirúrgica","Dr. Juan Guzmán"],
+    ["3:15 – 3:35 PM","Conversatorio","Dres. Díaz, Sotillo, Vásquez, Guzmán y Dra. Sara Zabala"]]}
   ];
   const root=$('#program');
   function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
