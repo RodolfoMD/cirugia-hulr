@@ -193,6 +193,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
 .fab{position:fixed;right:18px;bottom:18px;z-index:40;display:none}
 .fab .btn{padding:14px 22px;box-shadow:0 14px 34px rgba(0,0,0,.45)}
 
+/* PONENTES */
+#ponentes{background:radial-gradient(60% 55% at 85% 12%,rgba(18,92,165,.28),transparent 70%),var(--navy-900)}
+.spk-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:42px}
+.spk{width:calc((100% - 66px)/4)}
+.spk figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--navy-800);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .25s,border-color .25s}
+.spk:hover figure{transform:translateY(-6px);border-color:var(--gold)}
+.spk img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.spk figcaption{position:absolute;inset:auto 0 0 0;padding:84px 16px 16px;background:linear-gradient(180deg,transparent,rgba(6,26,54,.96) 62%)}
+.spk figcaption time{display:block;font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.spk figcaption b{display:block;font-family:var(--display);font-weight:700;font-size:1.45rem;text-transform:uppercase;line-height:1.05;margin-top:2px}
+.spk figcaption span{display:block;color:var(--blue-300);font-size:.8rem;line-height:1.3;margin-top:5px}
+.spk figcaption .spk-tag{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-900);background:var(--gold);padding:3px 9px;border-radius:999px;margin-bottom:6px}
+.spk.mag figure{border-color:var(--gold-600);box-shadow:0 18px 44px rgba(232,168,23,.18)}
+@media (max-width:900px){.spk{width:calc((100% - 44px)/3)}}
+@media (max-width:640px){.spk-grid{gap:14px}.spk{width:calc((100% - 14px)/2)}.spk figcaption{padding:60px 12px 12px}.spk figcaption b{font-size:1.15rem}.spk figcaption span{font-size:.72rem}}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
@@ -236,6 +252,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
       <a href="#jornada">La jornada</a>
       <a href="#eponimo">Epónimo</a>
       <a href="#programa">Programa</a>
+      <a href="#ponentes">Ponentes</a>
       <a href="#entradas">Entradas</a>
       <a href="#pagos">Pagos</a>
       <a href="#lugar">Lugar</a>
@@ -335,6 +352,88 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
     </div>
     <div id="program" class="rv"></div>
     <p class="note">Horarios de Venezuela (UTC−4). El programa puede recibir ajustes de último momento. · <button class="tab" id="ics" style="padding:6px 14px;font-size:.8rem">📅 Añadir al calendario</button></p>
+  </div>
+</section>
+
+<section id="ponentes">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Quiénes nos acompañan</span>
+      <h2>Nuestros <span>ponentes</span></h2>
+      <p class="lead">Especialistas y docentes que comparten su experiencia en cada bloque del programa.</p>
+    </div>
+    <div class="spk-grid">
+      <article class="spk rv">
+        <figure><img src="ponentes/francisco-salazar.jpg" alt="Dr. Francisco Salazar" width="640" height="800" loading="lazy">
+          <figcaption><time>8:30 AM</time><b>Dr. Francisco Salazar</b><span>Patología biliar aguda: qué hacer cuando no hay cirujano de guardia</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/freddy-pereira.jpg" alt="Dr. Freddy Pereira" width="640" height="800" loading="lazy">
+          <figcaption><time>8:55 AM</time><b>Dr. Freddy Pereira</b><span>Manejo de la necrosis pancreática</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/rafael-gonzalez.jpg" alt="Dr. Rafael González" width="640" height="800" loading="lazy">
+          <figcaption><time>9:20 AM</time><b>Dr. Rafael González</b><span>Apendicitis aguda en el siglo XXI</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/patricia-lucena.jpg" alt="Dra. Patricia Lucena" width="640" height="800" loading="lazy">
+          <figcaption><time>9:40 AM</time><b>Dra. Patricia Lucena</b><span>Sepsis en el paciente quirúrgico</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/manuel-toquero.jpg" alt="Dr. Manuel Toquero" width="640" height="800" loading="lazy">
+          <figcaption><time>10:35 AM</time><b>Dr. Manuel Toquero</b><span>Abordaje moderno en el área de flebología</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/mariela-mejias.jpg" alt="Lcda. Mariela Mejías" width="640" height="800" loading="lazy">
+          <figcaption><time>11:00 AM</time><b>Lcda. Mariela Mejías</b><span>Enterotomografía</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/yraida-pena.jpg" alt="Dra. Yraida Peña" width="640" height="800" loading="lazy">
+          <figcaption><time>11:20 AM</time><b>Dra. Yraida Peña</b><span>Atención inicial del paciente quemado</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/eduardo-nunes.jpg" alt="Dr. Eduardo Nunes" width="640" height="800" loading="lazy">
+          <figcaption><time>11:45 AM</time><b>Dr. Eduardo Nunes</b><span>Laparoscopia en el escenario de urgencia</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk mag rv">
+        <figure><img src="ponentes/francisco-zamora.jpg" alt="Dr. Francisco Zamora" width="640" height="800" loading="lazy">
+          <figcaption><span class="spk-tag">Magistral · Virtual</span><time>1:30 PM</time><b>Dr. Francisco Zamora</b><span>Conferencia Magistral</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/judibeth-medina.jpg" alt="Dra. Judibeth Medina" width="640" height="800" loading="lazy">
+          <figcaption><time>1:55 PM</time><b>Dra. Judibeth Medina</b><span>Geometría quirúrgica del piso pélvico</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/francisco-carvajal.jpg" alt="Dr. Francisco Carvajal" width="640" height="800" loading="lazy">
+          <figcaption><time>2:15 PM</time><b>Dr. Francisco Carvajal</b><span>Urología dirigida al médico rural</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/juan-guzman.jpg" alt="Dr. Juan Guzmán" width="640" height="800" loading="lazy">
+          <figcaption><time>2:40 PM</time><b>Dr. Juan Guzmán</b><span>Trauma toracoabdominal penetrante vs cerrado</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/jose-diaz.jpg" alt="Dr. José Díaz" width="640" height="800" loading="lazy">
+          <figcaption><time>3:15 PM</time><b>Dr. José Díaz</b><span>Conversatorio · Código Quirúrgico</span></figcaption>
+        </figure>
+      </article>
+      <article class="spk rv">
+        <figure><img src="ponentes/sara-zabala.jpg" alt="Dra. Sara Zabala" width="640" height="800" loading="lazy">
+          <figcaption><time>3:15 PM</time><b>Dra. Sara Zabala</b><span>Conversatorio · Código Quirúrgico</span></figcaption>
+        </figure>
+      </article>
+    </div>
   </div>
 </section>
 
