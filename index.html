@@ -209,10 +209,29 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
 @media (max-width:900px){.spk{width:calc((100% - 44px)/3)}}
 @media (max-width:640px){.spk-grid{gap:14px}.spk{width:calc((100% - 14px)/2)}.spk figcaption{padding:60px 12px 12px}.spk figcaption b{font-size:1.15rem}.spk figcaption span{font-size:.72rem}}
 
+/* PATROCINANTES */
+#patrocinantes{background:linear-gradient(180deg,var(--navy-900),var(--navy-800))}
+.spn-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:42px}
+.spn{width:min(260px,100%);text-align:center}
+.spn-logo{background:#fff;border-radius:var(--r);aspect-ratio:1/1;padding:22px;display:grid;place-items:center;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .25s,border-color .25s}
+.spn:hover .spn-logo{transform:translateY(-6px);border-color:var(--gold)}
+.spn-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.spn b{display:block;margin-top:14px;font-family:var(--display);font-weight:700;font-size:1.35rem;text-transform:uppercase;line-height:1.1}
+@media (max-width:640px){.spn{width:calc((100% - 14px)/2)}.spn-grid{gap:14px}.spn b{font-size:1.1rem}}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 
+.brand,.menu a{white-space:nowrap}
+@media (max-width:1240px){.menu{gap:18px}}
+@media (max-width:1100px){
+  .menu{position:fixed;inset:64px 0 auto 0;background:rgba(6,26,54,.98);flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s;border-bottom:1px solid var(--line)}
+  .menu.open{transform:none;opacity:1;pointer-events:auto}
+  .menu a:not(.btn){padding:14px 4px;border-bottom:1px solid var(--line);opacity:1}
+  .menu .btn{margin-top:16px;padding:14px}
+  .burger{display:block}
+}
 @media (max-width:900px){
   section{padding:64px 0}
   .menu{position:fixed;inset:64px 0 auto 0;background:rgba(6,26,54,.98);flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s;border-bottom:1px solid var(--line)}
@@ -253,6 +272,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
       <a href="#eponimo">Epónimo</a>
       <a href="#programa">Programa</a>
       <a href="#ponentes">Ponentes</a>
+      <a href="#patrocinantes">Patrocinantes</a>
       <a href="#entradas">Entradas</a>
       <a href="#pagos">Pagos</a>
       <a href="#lugar">Lugar</a>
@@ -414,8 +434,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
         </figure>
       </article>
       <article class="spk rv">
-        <figure><img src="ponentes/francisco-carvajal.jpg" alt="Dr. Francisco Carvajal" width="640" height="800" loading="lazy">
-          <figcaption><time>2:15 PM</time><b>Dr. Francisco Carvajal</b><span>Urología dirigida al médico rural</span></figcaption>
+        <figure><img src="ponentes/jose-carvajal.jpg" alt="Dr. José Carvajal" width="640" height="800" loading="lazy">
+          <figcaption><time>2:15 PM</time><b>Dr. José Carvajal</b><span>Urología dirigida al médico rural</span></figcaption>
         </figure>
       </article>
       <article class="spk rv">
@@ -432,6 +452,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
         <figure><img src="ponentes/sara-zabala.jpg" alt="Dra. Sara Zabala" width="640" height="800" loading="lazy">
           <figcaption><time>3:15 PM</time><b>Dra. Sara Zabala</b><span>Conversatorio · Código Quirúrgico</span></figcaption>
         </figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="patrocinantes">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Con el apoyo de</span>
+      <h2>Nuestros <span>patrocinantes</span></h2>
+      <p class="lead">Gracias a quienes hacen posible esta jornada.</p>
+    </div>
+    <div class="spn-grid">
+      <article class="spn rv">
+        <div class="spn-logo"><img src="patrocinantes/creando-vida.jpg" alt="Logo de Fundación Creando mi Vida" width="698" height="700" loading="lazy"></div>
+        <b>Fundación Creando mi Vida</b>
       </article>
     </div>
   </div>
@@ -569,12 +605,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
    {b:2,t:"Bloque 2",s:"Urgencias abdominales y sepsis",items:[
     ["8:30 – 8:50 AM","Patología biliar aguda: qué hacer cuando no hay cirujano de guardia","Dr. Francisco Salazar"],
     ["8:55 – 9:15 AM","Manejo de la necrosis pancreática","Dr. Freddy Pereira"],
-    ["9:20 – 9:40 AM","Apendicitis aguda en el siglo XXI: actualización en diagnóstico, escalas de riesgo y manejo","Dr. Rafael Gonzalez"],
+    ["9:20 – 9:40 AM","Apendicitis aguda en el siglo XXI: actualización en diagnóstico, escalas de riesgo y manejo","Dr. Rafael González"],
     ["9:40 – 10:00 AM","Sepsis en el paciente quirúrgico: de los criterios Sepsis-3 al manejo crítico en urgencias","Dra. Patricia Lucena"],
     ["10:00 – 10:30 AM","Receso · Café y sesión de pósters",null,"break"]]},
    {b:3,t:"Bloque 3",s:"Abordajes y escenarios de urgencia",items:[
     ["10:35 – 10:55 AM","Abordaje moderno en el área de flebología","Dr. Manuel Toquero"],
-    ["11:00 – 11:20 AM","Enterotomografía","Lic. Mariela Mejias"],
+    ["11:00 – 11:20 AM","Enterotomografía","Lic. Mariela Mejías"],
     ["11:20 – 11:40 AM","Atención inicial del paciente quemado: desafíos terapéuticos de las primeras 24 horas","Dra. Yraida Peña"],
     ["11:45 – 12:05 PM","Laparoscopia en el escenario de urgencia: indicaciones y límites","Dr. Eduardo Nunes"],
     ["12:05 – 1:20 PM","Receso · Almuerzo",null,"break"]]},
