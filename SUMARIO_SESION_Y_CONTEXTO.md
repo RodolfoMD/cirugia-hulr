@@ -1,7 +1,7 @@
 # SUMARIO COMPLETO DE LA SESIÓN — VIII Jornada Científica de Cirugía General
 
 > Documento de contexto para retomar el trabajo en otra sesión / otro dispositivo.
-> Última actualización: 31-oct-2026. Carpeta del proyecto: `C:\Users\Rodolfo\Documents\Flyer`
+> Última actualización: 18-nov-2026 (ver secciones 11 a 14 para lo nuevo: invitación de trabajo de grado, ponentes, patrocinantes). Carpeta del proyecto: `C:\Users\Rodolfo\Documents\Flyer`
 > Idioma de trabajo con el usuario: **español (Venezuela)**. Trato: directo, sin rodeos.
 
 ---
@@ -84,15 +84,15 @@ Nota de datos: el Excel original (`Ponencia.xlsx`, hoja 2) decía "VII Jornada";
 - 8:15 – 8:30 AM · Semblanza y homenaje institucional al Dr. Hernán Malavé · Comité Organizador *(se quitó "In Memoriam")*
 
 **Bloque 2 · Urgencias abdominales y sepsis**
-- 8:30 – 8:50 · Patología biliar aguda: qué hacer cuando no hay cirujano de guardia · Dr. Francisco Salazar
+- 8:30 – 8:50 · Patología biliar aguda: ¿Qué hacer cuando no hay cirujano de guardia? · Dr. Francisco Salazar *(título corregido el 18-nov)*
 - 8:55 – 9:15 · Manejo de la necrosis pancreática · Dr. Freddy Pereira
-- 9:20 – 9:40 · Apendicitis aguda en el siglo XXI: actualización en diagnóstico, escalas de riesgo y manejo · Dr. Rafael Gonzalez
+- 9:20 – 9:40 · Apendicitis aguda en el siglo XXI: actualización en diagnóstico, escalas de riesgo y manejo · Dr. Rafael González
 - 9:40 – 10:00 · Sepsis en el paciente quirúrgico: de los criterios Sepsis-3 al manejo crítico en urgencias · Dra. Patricia Lucena
 - 10:00 – 10:30 · **Receso** · Café y sesión de pósters
 
 **Bloque 3 · Abordajes y escenarios de urgencia**
 - 10:35 – 10:55 · Abordaje moderno en el área de flebología · Dr. Manuel Toquero
-- 11:00 – 11:20 · Enterotomografía · Lic. Mariela Mejias
+- 11:00 – 11:20 · Enterotomografía · Lic. Mariela Mejías
 - 11:20 – 11:40 · Atención inicial del paciente quemado: desafíos terapéuticos de las primeras 24 horas · Dra. Yraida Peña
 - 11:45 – 12:05 PM · Laparoscopia en el escenario de urgencia: indicaciones y límites · Dr. Eduardo Nunes
 - 12:05 – 1:20 PM · **Receso** · Almuerzo
@@ -100,9 +100,9 @@ Nota de datos: el Excel original (`Ponencia.xlsx`, hoja 2) decía "VII Jornada";
 **Bloque 4 · Conferencia magistral, piso pélvico, urología y trauma** *(modificado hoy)*
 - **1:30 – 1:55 PM · Conferencia Magistral · Dr. Francisco Zamora · (Virtual)** ← nueva, abre el bloque
 - 1:55 – 2:15 PM · Geometría quirúrgica del piso pélvico: restauración funcional vs recurrencia · Dra. Judibeth Medina
-- 2:15 – 2:40 PM · Urología dirigida al médico rural · Dr. José Carvajal
+- 2:15 – 2:40 PM · Urología dirigida al médico rural · Dr. José Carvajal *(el usuario confirmó el 18-nov que es **José**; su foto venía rotulada "Francisco Carvajal")*
 - 2:40 – 3:15 PM · Trauma toracoabdominal penetrante vs cerrado: prioridades de tratamiento y oportunidad quirúrgica · Dr. Juan **Guzmán**
-- 3:15 – 3:35 PM · **Conversatorio** · Dres. Díaz, Sotillo, Vásquez, Guzmán y **Dra. Sara Zabala** *(se quitó el título "Podcast de cirujanos de la San José")*
+- 3:15 – 3:35 PM · **Código Quirúrgico: El Podcast de Cirugía** (conversatorio) · Dr. Díaz, Dr. Sotillo, Dra. Vásquez, Dr. Guzmán y Dra. Sara Zabala *(el 31-oct se dejó solo "Conversatorio"; después el usuario lo renombró a este título directamente en GitHub)*
 
 ### Correcciones pedidas el 31-oct y cómo se resolvieron
 1. **Acento en Guzmán** → aplicado en flyer de programa y landing (todas las apariciones).
@@ -118,7 +118,7 @@ Nota de datos: el Excel original (`Ponencia.xlsx`, hoja 2) decía "VII Jornada";
 - El archivo `.ics` ("añadir al calendario") termina a las **4:00 PM**; el programa ahora termina 3:35 PM.
 - No hay "Palabras de cierre" (estaban en el primer Excel, 3:40–4:00); no se agregaron.
 - Logo del hospital: ¿"1963–2007" o "1963–2001"?
-- Nombres tal como están en la landing/Excel (Gonzalez, Mejias, Nunes, Judibeth, Yraida); no se "corrigieron" por cuenta propia.
+- ~~Nombres sin tilde (Gonzalez, Mejias)~~ → **resuelto el 18-nov**: González y Mejías en landing, flyer del programa y Excel. Siguen como el usuario los escribió: Nunes, Judibeth, Yraida.
 - En la sección de pagos de la landing el **teléfono de Pago Móvil (04120880980)** es distinto del de contacto; confirmar que sea el de la cuenta de pago.
 - Los datos de pago (cédula, Binance, etc.) viven solo en la landing; **no se copian en este documento**.
 
@@ -132,9 +132,15 @@ Flyer\
      1_Flyer_Principal\          Flyer_Principal.png / .pdf
      2_Pantalla_de_Entrada\      Pantalla_de_Entrada.png / .pdf
      3_Programa_de_la_Jornada\   Programa_de_la_Jornada.png / .pdf
-     4_Landing_Page\             index.html (= versión del repo), landing_para_subir_a_GitHub.zip,
-                                 imágenes de pago/epónimo del trabajo paralelo
-  2_EDITABLES\                   *_EDITABLE.pptx (3), Ponencia_datos_del_programa.xlsx, Enlaces_Canva_para_editar.txt
+     4_Landing_Page\             index.html (= versión del repo), ponentes\ y patrocinantes\ (fotos/logos de la web),
+                                 landing_para_subir_a_GitHub.zip (desactualizado), imágenes de pago/epónimo
+     5_Invitacion_Trabajo_de_Grado\  Invitacion_General.png/.pdf, Personalizadas\ (36 invitaciones x PNG+PDF),
+                                 Opciones_ubicacion_nombre\ (pruebas A/B/C del nombre)
+     6_Ponentes\                 Flyer_General_Ponentes.png/.pdf, Individuales\ (14 flyers x PNG+PDF)
+     7_Patrocinantes\            Individuales\ (por ahora 1: Fundación Creando mi Vida)
+  2_EDITABLES\                   *_EDITABLE.pptx (3), Ponencia_datos_del_programa.xlsx, Enlaces_Canva_para_editar.txt,
+                                 Invitacion_Trabajo_de_Grado\, Ponentes\, Patrocinantes\  (plantillas HTML + scripts, ver 11 a 13)
+  Ponentes\  y  Patrocinantes\   (en la raíz) carpetas de ENTRADA donde el usuario deja fotos de ponentes / logos de patrocinantes
   3_LOGOS_Y_QR\                  logos limpios (png), Logo_Postgrado_ORIGINAL.jpg, QR_Landing_rodolfomd.github.io-cirugia-hulr.png
   _archivo\                      versiones anteriores y trabajo (no se borró nada)
      pruebas_y_trabajo\gh\repo   clon local del repositorio de GitHub
@@ -192,3 +198,38 @@ Exportes de Canva: PNG 2480×3507 ("pro"), PDF A4, PPTX. Los `.pptx` salen de Ca
 - **Cambiar el QR:** generar PNG → subir → borrar el elemento QR viejo e insertar el nuevo en el mismo (left, top, tamaño) → exportar → escanear PNG y PDF.
 - **Actualizar la web:** editar `_archivo\pruebas_y_trabajo\gh\repo\index.html` (o clonar de nuevo el repo) → `git add/commit/push origin main` → esperar ~1 min y comprobar con `curl` en https://rodolfomd.github.io/cirugia-hulr/ → copiar el `index.html` a `1_PRODUCTOS_FINALES\4_Landing_Page` y regenerar el zip.
 - **Cambiar el teléfono de contacto:** flyer principal (elemento `LBpVFlHMkBBLjqvF`), y en la landing 3 sitios (texto, `tel:+584248349335`, `wa.me/584248349335`). El flyer de entrada y el programa no muestran teléfono.
+
+---
+
+## 11. Invitación "Presentación de Trabajo de Grado" (sesión del 10–17 nov)
+
+**Evento aparte de la jornada:** martes **17-nov-2026, 9:00 AM**, Hospital Universitario Dr. Luis Razetti, **piso 5, Sala de Conferencias de Ginecología y Obstetricia**. Presentación del trabajo de grado como requisito para el título de **CIRUJANO GENERAL**. (El usuario dijo "logo del audio" = logo de la UDO.)
+
+- **Diseño final = "modelo B":** logos arriba (hospital · postgrado · UDO) + línea dorada; **nombre del invitado grande y centrado** (Playfair Display cursiva); debajo, sobre una **foto de quirófano translúcida**, "Nos complace invitarle a nuestra" / **PRESENTACIÓN DE TRABAJO DE GRADO** (blanco + dorado) / "Requisito para la obtención del título de CIRUJANO GENERAL"; abajo fecha, hora, lugar. Tipografía Montserrat. Mismo branding/colores de los flyers.
+- **Plantilla y scripts:** `2_EDITABLES\Invitacion_Trabajo_de_Grado\` → `invitacion.html` (parámetros `?n=Nombre` y `&o=B|A|C|G`; sin nombre usa la versión general `G`), `generar_invitaciones.py [lista.txt]` (genera PNG 2382×3369 + PDF A4 en `1_PRODUCTOS_FINALES\5_Invitacion_Trabajo_de_Grado`), `nombres_adjuntos.txt` (**36 nombres**, uno por línea con su Dr./Dra./Lcda./Sr.). Respaldos de iteraciones: `_invitacion_v1…v3*.html`.
+- **Salida:** `Invitacion_General.png/.pdf` y `Personalizadas\Invitacion_<Tratamiento>_<Nombre>.png/.pdf` (36×2). Una versión con la palabra "Adjuntos" se descartó (en `_archivo\invitaciones_descartadas`).
+- **Para agregar a alguien:** añadir su línea a `nombres_adjuntos.txt` y generar solo ese (crear un txt temporal con esa línea y pasarlo al script).
+- **Supuestos sin confirmar:** tratamientos puestos por el modelo cuando el usuario no los dio: *Dr. Yoel Hernández*, *Dra. María Mariño*, *Dr. Rafael Toirac*. Escritos tal cual: "Mariajose Chaguan", "Sr. Humberto Rodriguez" (sin tilde). Faltan en la invitación el **nombre del residente que presenta** y el **título del trabajo** (nunca se dieron).
+- **Intento de subir el sumario a "Obsidian Vortex":** bóveda local `C:\Users\Rodolfo\Documents\Obsidian\Vortex`, remoto `https://github.com/rodolfomoreno95/obsidian-vortex.git` → GitHub respondió *Repository not found* con las credenciales guardadas (cuenta `RodolfoMD`). **No se subió nada.** Falta iniciar sesión con la cuenta `rodolfomoreno95` o confirmar la URL.
+
+## 12. Ponentes: fotos, sección web y flyers (18-nov)
+
+- **Entrada:** carpeta `Ponentes\` (14 fotos). Ponentes y orden del programa: Salazar, Pereira, R. González, Patricia Lucena, Toquero, Lcda. Mariela Mejías, Yraida Peña, E. Nunes, **Zamora (magistral, virtual)**, Judibeth Medina, **José Carvajal**, J. Guzmán, J. Díaz y Sara Zabala (estos dos, en el conversatorio).
+- **Recorte uniforme:** `2_EDITABLES\Ponentes\recortar_ponentes.py` → `recortes\<slug>.jpg` de **1000×1250 (4:5)**, centrado en el rostro (coordenadas manuales por foto; OpenCV 5 no trae Haar), leve ajuste azul. Casos especiales: foto circular de Mejías (se rellenan las esquinas), rótulo de Instagram de Yraida Peña (se recorta por arriba), Carvajal (cofia cortada en la foto original). Fotos de baja resolución: Pereira, Salazar, Guzmán.
+- **Landing:** sección `id="ponentes"` entre Programa y Entradas (tarjetas 4:5 con hora, nombre y tema; Zamora con borde dorado y etiqueta "Magistral · Virtual"; 4/3/2 columnas según ancho). Imágenes en el repo: `ponentes\<slug>.jpg` (640×800). Enlaces nuevos en el menú: **Ponentes** y **Patrocinantes**; el menú pasa a hamburguesa por debajo de **1100 px** y los enlaces no se parten (`white-space:nowrap`).
+- **Flyers:** `2_EDITABLES\Ponentes\flyer_ponentes.html` + `generar_flyers_ponentes.py [slug]` → `1_PRODUCTOS_FINALES\6_Ponentes\`: **flyer general** (14 fotos en filas 5-5-4, QR) y **14 individuales** (foto grande con marco dorado, "DR./DRA./LCDA." dorado y nombre blanco del mismo tamaño, título completo de la ponencia, hora propia, lugar, QR). Zamora = "Conferencista magistral" + etiqueta Virtual; Díaz y Zabala = "Conversatorio".
+- **Centrado verificado midiendo píxeles:** desvío máximo 1,8 px sobre 794 (la primera versión tenía el marco corrido 7 px, y lugar/pie corridos por reservar espacio al QR).
+
+## 13. Patrocinantes (18-nov)
+
+- **Entrada:** carpeta `Patrocinantes\` (por ahora `Creando Vida.JPG` → **Fundación Creando mi Vida**; logo JPG sobre fondo blanco, por eso va en una tarjeta blanca).
+- **Flyer individual:** `2_EDITABLES\Patrocinantes\flyer_patrocinantes.html` (lista `SPON` dentro del archivo) + `generar_flyers_patrocinantes.py [slug] [--general]` → `1_PRODUCTOS_FINALES\7_Patrocinantes\`. A pedido del usuario el flyer **no lleva el nombre escrito ni el texto "Gracias por acompañar…"**: solo "PATROCINANTE", la tarjeta grande con el logo, fecha/lugar y QR. La plantilla del **flyer general** ya existe pero **no se ha generado** (con un solo logo no tiene sentido).
+- **Landing:** sección `id="patrocinantes"` (tarjeta blanca con logo + nombre y frase "Gracias a quienes hacen posible esta jornada"; logos en el repo `patrocinantes\<slug>.jpg`). Aquí **sí** se conserva el nombre bajo el logo; el usuario pidió quitar el texto solo del flyer.
+- **Para agregar un patrocinante:** copiar el logo a `2_EDITABLES\Patrocinantes\logos\<slug>.jpg` (recortado, ~700 px) → añadir `["slug","Nombre"]` a `SPON` → correr el script (individual y `--general`) → copiar el logo a `repo\patrocinantes\` y añadir su `<article class="spn rv">` en `index.html` → push.
+
+## 14. Estado de GitHub y pendientes (18-nov)
+
+- Commits de la sesión en `main`: `f65e518` (sección Ponentes), `c2c0970` (José Carvajal, tildes, Patrocinantes, menú), `76ea074` (título de Salazar), más el de este sumario. Un `git push` llegó a tardar más de 2 min por el *credential manager*; si se cuelga, revisar si hay una ventana de inicio de sesión de GitHub abierta.
+- **Programa:** flyer de Canva (`DAHYMGv0A14`), Excel y landing quedaron sincronizados el 18-nov (título de Salazar con ¿?, González, Mejías, José Carvajal). Versiones anteriores en `_archivo\versiones_anteriores\programa` y `\excel`.
+- **Pendiente de confirmar con el usuario:** tratamientos supuestos (Yoel, María Mariño, Rafael Toirac); "Rodriguez"/"Mariajose"; datos del residente y título del trabajo de grado (invitación); si la tarjeta web del patrocinante debe perder también el nombre/la frase de gracias; credenciales para Obsidian Vortex; mejores fotos de Pereira/Salazar/Guzmán; los puntos de la sección 5 que seguían abiertos (Zamora virtual, conteo "14 ponentes", fin del `.ics`, logo 1963–2007).
+- **Trampas nuevas:** `<img height=…>` rompe `aspect-ratio` (usar `height:auto`); el `letter-spacing` deja espacio al final y descentra (compensar con `padding-left`); `text-wrap:balance` evita palabras sueltas; en Python con `re.sub` los `\u` del reemplazo fallan (usar `str.replace`); `python -I` aísla el entorno (OpenCV 5.0 no trae `CascadeClassifier`); los heredocs con comillas/backticks fallan en Git Bash → crear los archivos con la herramienta de escritura; `/tmp` de Git Bash no es el mismo que ve Python en Windows.
