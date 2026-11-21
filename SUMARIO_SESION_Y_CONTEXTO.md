@@ -1,7 +1,7 @@
 # SUMARIO COMPLETO DE LA SESIÓN — VIII Jornada Científica de Cirugía General
 
 > Documento de contexto para retomar el trabajo en otra sesión / otro dispositivo.
-> Última actualización: 18-nov-2026 (ver secciones 11 a 14 para lo nuevo: invitación de trabajo de grado, ponentes, patrocinantes). Carpeta del proyecto: `C:\Users\Rodolfo\Documents\Flyer`
+> Última actualización: 21-nov-2026 (ver secciones 11 a 14 para lo nuevo: invitación de trabajo de grado, ponentes, patrocinantes). Carpeta del proyecto: `C:\Users\Rodolfo\Documents\Flyer`
 > Idioma de trabajo con el usuario: **español (Venezuela)**. Trato: directo, sin rodeos.
 
 ---
@@ -137,7 +137,7 @@ Flyer\
      5_Invitacion_Trabajo_de_Grado\  Invitacion_General.png/.pdf, Personalizadas\ (36 invitaciones x PNG+PDF),
                                  Opciones_ubicacion_nombre\ (pruebas A/B/C del nombre)
      6_Ponentes\                 Flyer_General_Ponentes.png/.pdf, Individuales\ (14 flyers x PNG+PDF)
-     7_Patrocinantes\            Individuales\ (por ahora 1: Fundación Creando mi Vida)
+     7_Patrocinantes\            Flyer_General_Patrocinantes.png/.pdf, Individuales\ (7 flyers x PNG+PDF)
   2_EDITABLES\                   *_EDITABLE.pptx (3), Ponencia_datos_del_programa.xlsx, Enlaces_Canva_para_editar.txt,
                                  Invitacion_Trabajo_de_Grado\, Ponentes\, Patrocinantes\  (plantillas HTML + scripts, ver 11 a 13)
   Ponentes\  y  Patrocinantes\   (en la raíz) carpetas de ENTRADA donde el usuario deja fotos de ponentes / logos de patrocinantes
@@ -222,14 +222,16 @@ Exportes de Canva: PNG 2480×3507 ("pro"), PDF A4, PPTX. Los `.pptx` salen de Ca
 
 ## 13. Patrocinantes (18-nov)
 
-- **Entrada:** carpeta `Patrocinantes\` (por ahora `Creando Vida.JPG` → **Fundación Creando mi Vida**; logo JPG sobre fondo blanco, por eso va en una tarjeta blanca).
-- **Flyer individual:** `2_EDITABLES\Patrocinantes\flyer_patrocinantes.html` (lista `SPON` dentro del archivo) + `generar_flyers_patrocinantes.py [slug] [--general]` → `1_PRODUCTOS_FINALES\7_Patrocinantes\`. A pedido del usuario el flyer **no lleva el nombre escrito ni el texto "Gracias por acompañar…"**: solo "PATROCINANTE", la tarjeta grande con el logo, fecha/lugar y QR. La plantilla del **flyer general** ya existe pero **no se ha generado** (con un solo logo no tiene sentido).
-- **Landing:** sección `id="patrocinantes"` (tarjeta blanca con logo + nombre y frase "Gracias a quienes hacen posible esta jornada"; logos en el repo `patrocinantes\<slug>.jpg`). Aquí **sí** se conserva el nombre bajo el logo; el usuario pidió quitar el texto solo del flyer.
-- **Para agregar un patrocinante:** copiar el logo a `2_EDITABLES\Patrocinantes\logos\<slug>.jpg` (recortado, ~700 px) → añadir `["slug","Nombre"]` a `SPON` → correr el script (individual y `--general`) → copiar el logo a `repo\patrocinantes\` y añadir su `<article class="spn rv">` en `index.html` → push.
+- **Entrada:** carpeta `Patrocinantes\` (raíz del proyecto). Al 21-nov hay **7 patrocinantes**: Fundación Creando mi Vida, Dra. María Elizabeth Brito (Medicina y Cirugía, logo "MEB"), JJAS Gorros, Megalabs, Punto Rosa Dream Shop, Servicio de Urología Dr. Yoel Hernández (Complejo Hospitalario Universitario Dr. Luis Razetti) y Tecno Asfaltos de Oriente. (Esto confirma que el Dr. Yoel Hernández es urólogo del Razetti.)
+- **Preparación de logos:** `2_EDITABLES\Patrocinantes\preparar_logos.py` → `logos\<slug>.(jpg|png)`. Cada logo se recorta según su tipo: modo **pad** (logo sobre tarjeta blanca, se recorta el blanco sobrante) o **full** (la imagen llena toda la tarjeta; usado en Brito y Punto Rosa por tener fondo propio). Para uno nuevo, añadir su entrada en el diccionario `LOGOS` del script.
+- **Flyers:** `2_EDITABLES\Patrocinantes\flyer_patrocinantes.html` (lista `SPON = [slug, nombre, extensión, modo]` dentro del archivo) + `generar_flyers_patrocinantes.py [slug] [--general]` → `1_PRODUCTOS_FINALES\7_Patrocinantes\` (**7 individuales PNG+PDF y el flyer general**). A pedido del usuario los flyers **no llevan el nombre escrito ni "Gracias por acompañar…"**: solo "PATROCINANTE" (individual) o "NUESTROS PATROCINANTES" (general), logos en tarjetas, fecha/lugar y QR. El general reparte las tarjetas automáticamente en filas equilibradas (7 → 3-2-2, tarjetas de 176 px; el tamaño se ajusta según el número).
+- **Landing:** sección `id="patrocinantes"` con las 7 tarjetas (logo + nombre debajo y frase "Gracias a quienes hacen posible esta jornada"; imágenes en el repo `patrocinantes\<slug>.(jpg|png)`; las de modo full llevan la clase `.spn.full`). Aquí **sí** se conserva el nombre bajo el logo.
+- **Para agregar un patrocinante:** dejar el logo en `Patrocinantes\` → añadirlo a `LOGOS` en `preparar_logos.py` y correrlo → añadir `["slug","Nombre","ext","pad|full"]` a `SPON` → correr `generar_flyers_patrocinantes.py --general` → copiar el logo a `repo\patrocinantes\` (≤800 px) y añadir su `<article class="spn [full] rv">` en `index.html` → push. Se copia también `index.html` y `patrocinantes\` a `1_PRODUCTOS_FINALES\4_Landing_Page`.
+- **Pendiente:** el archivo de Tecno Asfaltos es un **afiche de baja resolución (438×620)**, no un logo suelto; se ve pequeño/borroso. Pedir el logo original.
 
 ## 14. Estado de GitHub y pendientes (18-nov)
 
-- Commits de la sesión en `main`: `f65e518` (sección Ponentes), `c2c0970` (José Carvajal, tildes, Patrocinantes, menú), `76ea074` (título de Salazar), más el de este sumario. Un `git push` llegó a tardar más de 2 min por el *credential manager*; si se cuelga, revisar si hay una ventana de inicio de sesión de GitHub abierta.
+- Commits de la sesión en `main`: `f65e518` (sección Ponentes), `c2c0970` (José Carvajal, tildes, Patrocinantes, menú), `76ea074` (título de Salazar), `44fedfb` (sumario 18-nov), `5632f8f` (6 patrocinantes nuevos), más el de esta actualización del sumario. Un `git push` llegó a tardar más de 2 min por el *credential manager*; si se cuelga, revisar si hay una ventana de inicio de sesión de GitHub abierta.
 - **Programa:** flyer de Canva (`DAHYMGv0A14`), Excel y landing quedaron sincronizados el 18-nov (título de Salazar con ¿?, González, Mejías, José Carvajal). Versiones anteriores en `_archivo\versiones_anteriores\programa` y `\excel`.
 - **Pendiente de confirmar con el usuario:** tratamientos supuestos (Yoel, María Mariño, Rafael Toirac); "Rodriguez"/"Mariajose"; datos del residente y título del trabajo de grado (invitación); si la tarjeta web del patrocinante debe perder también el nombre/la frase de gracias; credenciales para Obsidian Vortex; mejores fotos de Pereira/Salazar/Guzmán; los puntos de la sección 5 que seguían abiertos (Zamora virtual, conteo "14 ponentes", fin del `.ics`, logo 1963–2007).
 - **Trampas nuevas:** `<img height=…>` rompe `aspect-ratio` (usar `height:auto`); el `letter-spacing` deja espacio al final y descentra (compensar con `padding-left`); `text-wrap:balance` evita palabras sueltas; en Python con `re.sub` los `\u` del reemplazo fallan (usar `str.replace`); `python -I` aísla el entorno (OpenCV 5.0 no trae `CascadeClassifier`); los heredocs con comillas/backticks fallan en Git Bash → crear los archivos con la herramienta de escritura; `/tmp` de Git Bash no es el mismo que ve Python en Windows.
