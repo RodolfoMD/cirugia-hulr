@@ -213,9 +213,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
 #patrocinantes{background:linear-gradient(180deg,var(--navy-900),var(--navy-800))}
 .spn-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:42px}
 .spn{width:min(260px,100%);text-align:center}
-.spn-logo{background:#fff;border-radius:var(--r);aspect-ratio:1/1;padding:22px;display:grid;place-items:center;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .25s,border-color .25s}
+.spn-logo{position:relative;background:#fff;border-radius:var(--r);aspect-ratio:1/1;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .25s,border-color .25s}
 .spn:hover .spn-logo{transform:translateY(-6px);border-color:var(--gold)}
-.spn-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.spn-logo img{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);object-fit:contain}
+.spn.full .spn-logo img{inset:0;width:100%;height:100%;object-fit:cover}
 .spn b{display:block;margin-top:14px;font-family:var(--display);font-weight:700;font-size:1.35rem;text-transform:uppercase;line-height:1.1}
 @media (max-width:640px){.spn{width:calc((100% - 14px)/2)}.spn-grid{gap:14px}.spn b{font-size:1.1rem}}
 
@@ -466,8 +467,32 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-con
     </div>
     <div class="spn-grid">
       <article class="spn rv">
-        <div class="spn-logo"><img src="patrocinantes/creando-vida.jpg" alt="Logo de Fundación Creando mi Vida" width="698" height="700" loading="lazy"></div>
+        <div class="spn-logo"><img src="patrocinantes/creando-vida.jpg" alt="Logo de Fundación Creando mi Vida" width="797" height="800" loading="lazy"></div>
         <b>Fundación Creando mi Vida</b>
+      </article>
+      <article class="spn full rv">
+        <div class="spn-logo"><img src="patrocinantes/maria-brito.jpg" alt="Logo de Dra. María Elizabeth Brito" width="599" height="599" loading="lazy"></div>
+        <b>Dra. María Elizabeth Brito</b>
+      </article>
+      <article class="spn rv">
+        <div class="spn-logo"><img src="patrocinantes/jjas-gorros.png" alt="Logo de JJAS Gorros" width="498" height="224" loading="lazy"></div>
+        <b>JJAS Gorros</b>
+      </article>
+      <article class="spn rv">
+        <div class="spn-logo"><img src="patrocinantes/megalabs.jpg" alt="Logo de Megalabs" width="800" height="195" loading="lazy"></div>
+        <b>Megalabs</b>
+      </article>
+      <article class="spn full rv">
+        <div class="spn-logo"><img src="patrocinantes/punto-rosa.jpg" alt="Logo de Punto Rosa Dream Shop" width="800" height="800" loading="lazy"></div>
+        <b>Punto Rosa Dream Shop</b>
+      </article>
+      <article class="spn rv">
+        <div class="spn-logo"><img src="patrocinantes/servicio-urologia.jpg" alt="Logo de Servicio de Urología Dr. Yoel Hernández" width="800" height="516" loading="lazy"></div>
+        <b>Servicio de Urología Dr. Yoel Hernández</b>
+      </article>
+      <article class="spn rv">
+        <div class="spn-logo"><img src="patrocinantes/tecno-asfaltos.jpg" alt="Logo de Tecno Asfaltos de Oriente" width="438" height="620" loading="lazy"></div>
+        <b>Tecno Asfaltos de Oriente</b>
       </article>
     </div>
   </div>
